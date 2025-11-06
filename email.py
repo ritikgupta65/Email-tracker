@@ -24,7 +24,7 @@ def format_india_timestamp():
     now = datetime.now(tz)
     return now.strftime("%d/%m/%Y %I:%M %p")
 
-@app.route("/api/track", methods=["GET", "POST"])
+@app.route("/email/track", methods=["GET", "POST"])
 def track():
     track_id = request.args.get("id") or request.form.get("id") or "unknown"
     ts = format_india_timestamp()
