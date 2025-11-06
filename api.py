@@ -15,7 +15,8 @@ APPS_SCRIPT_URL = os.getenv("APPS_SCRIPT_URL")
 app = Flask(__name__)
 
 # Path to the tracking pixel image
-PIXEL_PATH = os.path.join(os.path.dirname(__file__), "pixel.png")
+# PIXEL_PATH = os.path.join(os.path.dirname(__file__), "pixel.png")
+PIXEL_PATH = "https://cgahzcwiqcblmkwblqaj.supabase.co/storage/v1/object/public/cellular-text-pdf/pixel%20(1).png"
 
 def format_india_timestamp():
     """Return timestamp in DD/MM/YYYY hh:mm AM/PM format (Asia/Kolkata)"""
